@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using static DesignPatterns.Tests.AbstractFactoryTests.FurnitureTest;
 
 namespace DesignPatterns.Tests
 {
@@ -13,19 +14,8 @@ namespace DesignPatterns.Tests
         {
 
             ServiceProvider = new ServiceCollection()
-                .AddSingleton<ITest, Test>()
+                .AddSingleton<IFurnitureFactory, VictoriaFornitureFactory>()
                 .BuildServiceProvider();
-        }
-    }
-    public interface ITest
-    {
-        void print();
-    }
-    public class Test : ITest
-    {
-        public void print()
-        {
-            throw new NotImplementedException();
         }
     }
 }
