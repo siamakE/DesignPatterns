@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using static DesignPatterns.Tests.AbstractFactoryTests.FurnitureTest;
+using DesignPatterns.Tests.BuilderTests;
 
 namespace DesignPatterns.Tests
 {
@@ -15,6 +16,7 @@ namespace DesignPatterns.Tests
 
             ServiceProvider = new ServiceCollection()
                 .AddSingleton<IFurnitureFactory, VictoriaFornitureFactory>()
+                .AddSingleton<IToyBuilder, ToyBBuilder>()
                 .BuildServiceProvider();
         }
     }
