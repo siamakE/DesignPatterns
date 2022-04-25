@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.Extensions.DependencyInjection;
-using static DesignPatterns.Tests.AbstractFactoryTests.FurnitureTest;
+using static DesignPatterns.Tests.AbstractFactory.FurnitureTest;
 
-namespace DesignPatterns.Tests.AbstractFactoryTests
+namespace DesignPatterns.Tests.AbstractFactory
 {
     [TestClass]
     public class FurnitureTest : TestBase

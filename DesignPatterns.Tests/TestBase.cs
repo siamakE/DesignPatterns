@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using static DesignPatterns.Tests.AbstractFactoryTests.FurnitureTest;
-using DesignPatterns.Tests.BuilderTests;
+using static DesignPatterns.Tests.AbstractFactory.FurnitureTest;
 using DesignPatterns.Tests.FactoryMethod;
+using DesignPatterns.Tests.Builder;
 
 namespace DesignPatterns.Tests
 {

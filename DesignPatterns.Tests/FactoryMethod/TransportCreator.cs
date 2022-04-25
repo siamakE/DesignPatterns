@@ -1,5 +1,13 @@
 ﻿namespace DesignPatterns.Tests.FactoryMethod
 {
+    public interface ILogisticCreator
+    {
+        ITransport CreateTransport();
+    }
+    public interface ITransport
+    {
+
+    }
     public class ShipLogistics : ILogisticCreator
     {
         public ITransport CreateTransport()
@@ -14,15 +22,6 @@
         {
             return new Truck();
         }
-    }
-
-    public interface ILogisticCreator
-    {
-        ITransport CreateTransport();
-    }
-    public interface ITransport
-    {
-
     }
     public class Truck : ITransport
     {
