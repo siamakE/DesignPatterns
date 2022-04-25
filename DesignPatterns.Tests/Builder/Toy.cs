@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Tests.BuilderTests
+﻿namespace DesignPatterns.Tests.Builder
 {
     public class ToyCreator
     {

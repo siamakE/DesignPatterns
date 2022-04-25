@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace DesignPatterns.Tests.AbstractFactoryTests
+namespace DesignPatterns.Tests.AbstractFactory
 {
     [TestClass]
     public class AnimalWorldTest : TestBase

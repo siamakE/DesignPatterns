@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace DesignPatterns.Tests.BuilderTests
+namespace DesignPatterns.Tests.Builder
 {
     [TestClass]
     public class BuilderTest : TestBase
@@ -19,5 +19,5 @@ namespace DesignPatterns.Tests.BuilderTests
             var toy2 = toyCreator.GetToy();
         }
     }
-    
+
 }
