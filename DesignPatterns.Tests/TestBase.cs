@@ -20,8 +20,21 @@ namespace DesignPatterns.Tests
                 .AddSingleton<IToyBuilder, ToyBBuilder>()
                 .AddSingleton<ICreator, ConcreteCreatorB>()
                 .AddSingleton<ILogisticCreator, ShipLogistics>()
-                //.AddSingleton<ILogisticCreator, RoadLogistics>()
+                .AddSingleton<Func<string, ITest>>(sp => (string name) => new Test(name))
                 .BuildServiceProvider();
+        }
+        
+    }
+
+    public interface ITest
+    {
+    }
+    public class Test : ITest
+    {
+        public string Name { get; set; }
+        public Test(string name)
+        {
+            Name = name;
         }
     }
 }
